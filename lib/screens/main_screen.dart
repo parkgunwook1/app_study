@@ -9,7 +9,7 @@ class LoginSignupScreen extends StatefulWidget {
   State<LoginSignupScreen> createState() => _LoginSignupScreenState();
 }
 
-class _LoginSignupScreenState extends State<LoginSignupScreen> {
+class _LoginSignupScreenState extends State<LoginSignupScreen> { 
   bool isSignupScreen = true;
   final _formKey = GlobalKey<FormState>();
   String userName = '';
@@ -147,7 +147,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           GestureDetector(
                             onTap: () {
                               setState(() {
-                                isSignupScreen = false;
+                                isSignupScreen = false;  //로그인 클릭
                                 // _height = 230.0;
                               });
                             },
@@ -158,12 +158,12 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
-                                      color: !isSignupScreen
+                                      color: !isSignupScreen       // 삼항 조건연산자
                                           ? Palatee.activeColor
                                           : Palatee.textColor1),
                                 ),
                                 if (!isSignupScreen)
-                                  Container(
+                                  Container(                       // 단어 밑줄 
                                     margin: const EdgeInsets.only(top: 3),
                                     height: 2,
                                     width: 55,
@@ -175,7 +175,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           GestureDetector(
                             onTap: () {
                               setState(() {
-                                isSignupScreen = true;
+                                isSignupScreen = true;  // 회원가입 클릭
                                 // _height = 300.0;
                               });
                             },
@@ -186,7 +186,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                   style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
-                                      color: isSignupScreen
+                                      color: isSignupScreen        //삼항 조건 연산
                                           ? Palatee.activeColor
                                           : Palatee.textColor1),
                                 ),

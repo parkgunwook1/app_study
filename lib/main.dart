@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/screens/main_screen.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,8 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'chat app',
       theme: ThemeData(
-        primarySwatch: Colors.blue
-      ),
+        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
+        ),
       home: const LoginSignupScreen(),
     );
   }

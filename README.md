@@ -1,20 +1,7 @@
-# app_study
-<<<<<<< HEAD
+# app_project
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-flutter, dart 
->>>>>>> f5ccbc615332a9970104b41099ad8eb2e33f2872
+- 대시보드 기능(실시간 수익률 , 현재 보유 포지션, 최근 거래내역)
+- 실시간 모니터링(rsi, 볼린저밴드 기술지표, 거래량 분석)
+- 알림 (매매 알림, 손익 알림)
+- 거래내역 분석(수익률 분석, 승률 통계)
+- 포트폴리오 관리(코인별 수익률, 자산 분배 현황)
